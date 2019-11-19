@@ -29,12 +29,7 @@ public class TestCase {
 
     @Column(name = "ExecutionType")
     private  String executionType;
-
-
-    @Column(name = "ExecutionType2")
-    private  String executionType2;
-
-
+    
     @ManyToOne
     @JoinColumn(name = "testsuite_id")
     private TestSuite testSuite;
